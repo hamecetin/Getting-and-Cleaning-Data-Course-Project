@@ -62,4 +62,4 @@ tidy_data <-  group_by(tidy_data, subject, activities)
 Mean_data <- summarise_all(tidy_data, mean)
 Mean_data
 
-write.table(Mean_data, file = "MeanData.txt")
+write.table(Mean_data, file = "MeanData.txt", row.names = FALSE)
